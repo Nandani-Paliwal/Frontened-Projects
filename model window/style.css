@@ -1,0 +1,79 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+body{
+    background-image:linear-gradient(to  right,  #d5eff4, #67baa7eb,#a6fff9 ) ;
+   
+}
+.modals{
+    display: flex;
+    justify-content: center;
+    align-items:space-evenly;
+    margin: 2rem;
+    
+}
+.show-modal{
+    margin: 5rem 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    padding: 0.7rem 1.7rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #444;
+    background-color: #fff;
+    /* font-size: 1.8rem; */
+
+}
+.close-modal{
+    position: absolute;
+    top: 0.4rem;
+    right: 1.4rem;
+    bottom: auto;
+    left: auto;
+    /* width: auto; */
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+}
+
+
+/*CLASSES TO MAKE MODAL WORK*/
+
+
+.hidden{
+    display: none;
+}
+.overlay{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
